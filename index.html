@@ -24,9 +24,13 @@
             padding: 0; /* Remove default padding */
         }
 		#gradient-canvas {
-	  z-index: -1;
-	  width:100%;
-	  height:100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none; /* Prevent canvas from capturing events */
 	  --gradient-color-1: #c3e4ff; 
 	  --gradient-color-2: #6ec3f4; 
 	  --gradient-color-3: #eae2ff;  
@@ -42,7 +46,7 @@
             overflow-x: hidden;
             transition: 0.5s;
             font-size: 30px;
-            z-index: 1; /* Sidebar should be above top bar */
+            z-index: 4; /* Sidebar should be above top bar */
         }
 
         .sidebar.opened {
