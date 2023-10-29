@@ -163,7 +163,7 @@
         <img src="user-icon.png" alt="User Icon" class="user-icon">
     </div>
 </div>
-<script>
+<script type="module">
 	import { Gradient } from './Gradient.js'
 	
 	// Create your instance
@@ -171,7 +171,8 @@
 	
 	// Call `initGradient` with the selector to your canvas
 	gradient.initGradient('#gradient-canvas')
-        
+    </script>
+    <script>
         function toggleNav() {
             var sidebar = document.getElementById("mySidebar");
             sidebar.classList.toggle("opened");
