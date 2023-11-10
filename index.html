@@ -82,21 +82,30 @@
             left: 10px;
             z-index: 3; 
         }
-	.title {
-		position: absolute;
-		            z-index: 2;
-			font-family: 'Mona Sans', sans-serif;
-			color: rgba(48, 38, 136, 0.8);
-            mix-blend-mode: color-burn;
-			font-weight: 600;
-            font-size: 138px;
-            position: absolute;
-            margin-top: 250px;
-			 left: 50%;
-			white-space: nowrap;
-			 transform: translate(-50%, -50%);
-				}
-				
+    .title {
+        position: absolute;
+        z-index: 2;
+        font-family: 'Mona Sans', sans-serif;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 600;
+        font-size: 138px;
+        position: absolute;
+        margin-top: 250px;
+        left: 50%;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+    }
+
+    .title::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: rgba(68, 68, 68, 0.45);
+        mix-blend-mode: color-burn;
+        }		
 	.subtitle {
 		            z-index: 2;
 			font-family: 'Mona Sans', sans-serif;
