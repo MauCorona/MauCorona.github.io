@@ -96,26 +96,27 @@
     font-weight: 600;
     font-size: 138px;
     white-space: nowrap;
+    position: relative;
 }
 
 .title::before {
     content: attr(data-text);
     color: rgba(68, 68, 68, 0.45);
     mix-blend-mode: color-burn;
-
+    position: relative;
 }
 	
-	.subtitle {
-		            z-index: 2;
-			font-family: 'Mona Sans', sans-serif;
-			color: rgba(48, 38, 136, 0.8);
-			font-weight: 300;
-            font-size: 32px;
-			position: absolute;
-			margin-top: 400px;
-			 left: 50%;
-			 transform: translate(-50%, -50%);
-				}
+.subtitle {
+        z-index: 2;
+        font-family: 'Mona Sans', sans-serif;
+        color: rgba(48, 38, 136, 0.8);
+        font-weight: 300;
+        font-size: 32px;
+        position: relative;
+        margin-top: 400px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
 
 
     </style>
