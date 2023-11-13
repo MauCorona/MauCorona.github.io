@@ -38,36 +38,24 @@
             --gradient-color-4: #b9beff;
         }
 
-        .title-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
         .title {
             font-family: 'Mona Sans', sans-serif;
             font-weight: 600;
             font-size: 138px;
             white-space: nowrap;
-            position: relative;
-        }
-
-        .title::before,
-        .title::after {
-            content: attr(data-text);
             position: absolute;
             top: 200px;
             left: 50%;
             white-space: nowrap;
         }
 
-        .title::before {
+        .title.eff1 {
             color: rgba(68, 68, 68, 0.45);
             mix-blend-mode: color-burn;
+            
         }
 
-        .title::after {
+        .title.eff2 {
             color: rgba(20, 20, 20, 0.3);
         }
 
@@ -86,9 +74,8 @@
 
 <body>
     <canvas id="gradient-canvas" data-transition-in></canvas>
-    <div class="title-container">
-        <div class="title" data-text="¡Hola Chris!"></div>
-    </div>
+    <div class="title effect1" data-text="¡Hola Chris!"></div>
+    <div class="title effect2" data-text="¡Hola Chris!"></div>
 
     <div class="subtitle">"El único límite para tus logros es tu propia mente."<br> - Napoleon Hill</div>
 
